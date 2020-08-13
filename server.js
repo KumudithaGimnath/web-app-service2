@@ -1,14 +1,8 @@
 const express = require("express");
-const db = require("./db");
-const users = require("./users");
 const dotenv = require("dotenv");
 dotenv.config();
 
 const app = express();
-
-// db.authenticate()
-//     .then(() => console.log("Connected"))
-//     .catch((err) => console.log(err));
 
 const { User } = require("./db");
 
